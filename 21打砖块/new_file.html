@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<button class="bg">按钮</button>
+		<button class="prev"><</button>
+		<span class="time">加载中。。。</span>
+		<script type="text/javascript">
+		var qprev = document.querySelector(".prev");
+		qprev.onclick = function(){
+			console.log("333");
+		}
+		var start = document.querySelector(".bg");
+		start.onclick = function(){
+			console.log("44444");
+		}
+		var span = document.querySelector("span");
+		var day = new Date();
+		var a= day.toDateString();
+		span.innerHTML = a;
+		
+		</script>
+	</body>
+</html>
